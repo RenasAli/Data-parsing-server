@@ -1,0 +1,12 @@
+<people>
+    <person>
+        <name>Renas</name>
+        <age>24</age>
+        <country>Denmark</country>
+    </person>
+    <person>
+        <name>Ali</name>
+        <age>30</age>
+        <country>Syria</country>
+    </person>
+</people>
