@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "python"
+version = "0.1.0"
+description = ""
+authors = ["RenasAli <rena0506@stud.kea.dk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

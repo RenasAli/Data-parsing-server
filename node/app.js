@@ -9,7 +9,7 @@ const port = 8081;
 
 app.get("/json", (req, res) => {
     
-    fs.readFile('data/data.json', 'utf8', (err, jsonData) => {
+    fs.readFile('../data/data.json', 'utf8', (err, jsonData) => {
         if (err) {
           return res.status(500).send('Error reading JSON file: ' + err);
         }
@@ -20,7 +20,7 @@ app.get("/json", (req, res) => {
 
 
 app.get("/txt", (req, res) => {
-    fs.readFile('data/data.txt', 'utf8', (err, txtData) => {
+    fs.readFile('../data/data.txt', 'utf8', (err, txtData) => {
         if (err) {
           return res.status(500).send('Error reading TXT file: ' + err );
         }
@@ -32,7 +32,7 @@ app.get("/txt", (req, res) => {
 });
 
 app.get("/yaml", (req, res) => {
-    fs.readFile('data/data.yaml', 'utf8', (err, yamlData) => {
+    fs.readFile('../data/data.yaml', 'utf8', (err, yamlData) => {
         if (err) {
           return res.status(500).send('Error reading YAML file: ' + err );
         }
@@ -43,7 +43,7 @@ app.get("/yaml", (req, res) => {
 });
 
 app.get("/csv", (req, res) => {
-    fs.readFile('data/data.csv', 'utf8', (err, csvData) => {
+    fs.readFile('../data/data.csv', 'utf8', (err, csvData) => {
         if (err) {
           return res.status(500).send('Error reading CSV file: ' + err );
         }
@@ -62,7 +62,7 @@ app.get("/csv", (req, res) => {
 
 
 app.get("/xml", (req, res) => {
-    fs.readFile('data/data.xml', 'utf8', (err, xmlData) => {
+    fs.readFile('../data/data.xml', 'utf8', (err, xmlData) => {
         if (err) {
           return res.status(500).send('Error reading XML file: ' + err );
         }
